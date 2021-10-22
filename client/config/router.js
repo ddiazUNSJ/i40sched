@@ -182,6 +182,33 @@ Router.onBeforeAction(requireWarehouse, {only: 'warehouse'});
 
 
 
+Router.route('/watsonML',{name: 'watsonML',
+                        template:'watsonML',
+ });
+
+// verifica q este logeado de lo contrario no da permiso para inresar
+var requireWatsonML= function() {
+  if (! Meteor.user()) 
+  { 
+    console.log( "estoy Aqui");
+    if (Meteor.loggingIn()) 
+      this.render(this.loadingTemplate);
+    else 
+    {
+      swal ("Acceso No Autorizado");
+      this.redirect('landing');
+    }
+  } 
+  else {
+    this.render("watsonML");
+  }
+  this.next();
+};
+Router.onBeforeAction(requireWatsonML, {only: 'watsonML'});
+//------------------------------------------------------------------------------
+
+
+
 
 Router.route('/adminModels',{name: 'adminModels',
                         template:'adminModels',
