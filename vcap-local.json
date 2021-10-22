@@ -1,0 +1,12 @@
+{
+  "docplexcloud" : [ {
+    "name" : "DOcplexcloud-service",
+    "label" : "docplexcloud",
+    "plan" : "ODSTRIAL",
+    "credentials" : {
+      "url" : "https://api-oaas.docloud.ibmcloud.com/job_manager/rest/v1/",
+      "client_id" : "api_8f809928-5c46-4e51-befa-9290a26c970e",
+      "subscriptionId" : "503678058"
+    }
+  } ]
+}

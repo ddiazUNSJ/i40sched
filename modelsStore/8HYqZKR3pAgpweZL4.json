@@ -1,0 +1,134 @@
+{
+  "constructionPlan" : [ {
+    "house" : 1,
+    "task.name" : "masonry",
+    "task.duration" : 35,
+    "startDate" : 0,
+    "endDate" : 35
+  }, {
+    "house" : 1,
+    "task.name" : "carpentry",
+    "task.duration" : 15,
+    "startDate" : 35,
+    "endDate" : 50
+  }, {
+    "house" : 1,
+    "task.name" : "plumbing",
+    "task.duration" : 40,
+    "startDate" : 35,
+    "endDate" : 75
+  }, {
+    "house" : 1,
+    "task.name" : "ceiling",
+    "task.duration" : 15,
+    "startDate" : 75,
+    "endDate" : 90
+  }, {
+    "house" : 1,
+    "task.name" : "roofing",
+    "task.duration" : 5,
+    "startDate" : 50,
+    "endDate" : 55
+  }, {
+    "house" : 1,
+    "task.name" : "painting",
+    "task.duration" : 10,
+    "startDate" : 90,
+    "endDate" : 100
+  }, {
+    "house" : 1,
+    "task.name" : "windows",
+    "task.duration" : 5,
+    "startDate" : 55,
+    "endDate" : 60
+  }, {
+    "house" : 1,
+    "task.name" : "facade",
+    "task.duration" : 10,
+    "startDate" : 75,
+    "endDate" : 85
+  }, {
+    "house" : 1,
+    "task.name" : "garden",
+    "task.duration" : 5,
+    "startDate" : 75,
+    "endDate" : 80
+  }, {
+    "house" : 1,
+    "task.name" : "moving",
+    "task.duration" : 5,
+    "startDate" : 100,
+    "endDate" : 105
+  } ],
+  "workerPlan" : [ {
+    "skill.worker" : "Joe",
+    "skill.task" : "masonry",
+    "skill.level" : 9,
+    "house" : 1,
+    "startDate" : 0,
+    "endDate" : 35
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "carpentry",
+    "skill.level" : 7,
+    "house" : 1,
+    "startDate" : 35,
+    "endDate" : 50
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "roofing",
+    "skill.level" : 6,
+    "house" : 1,
+    "startDate" : 50,
+    "endDate" : 55
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "windows",
+    "skill.level" : 8,
+    "house" : 1,
+    "startDate" : 55,
+    "endDate" : 60
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "facade",
+    "skill.level" : 5,
+    "house" : 1,
+    "startDate" : 75,
+    "endDate" : 85
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "plumbing",
+    "skill.level" : 7,
+    "house" : 1,
+    "startDate" : 35,
+    "endDate" : 75
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "ceiling",
+    "skill.level" : 8,
+    "house" : 1,
+    "startDate" : 75,
+    "endDate" : 90
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "painting",
+    "skill.level" : 9,
+    "house" : 1,
+    "startDate" : 90,
+    "endDate" : 100
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "garden",
+    "skill.level" : 9,
+    "house" : 1,
+    "startDate" : 75,
+    "endDate" : 80
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "moving",
+    "skill.level" : 8,
+    "house" : 1,
+    "startDate" : 100,
+    "endDate" : 105
+  } ]
+}

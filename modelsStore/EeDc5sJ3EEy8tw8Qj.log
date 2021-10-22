@@ -1,0 +1,62 @@
+[2019-05-19T16:24:25Z, INFO] Initialization of plan.
+[2019-05-19T16:24:25Z, INFO] Initialization of TPlan.
+[2019-05-19T16:24:25Z, INFO] Initialization of warehouses.
+[2019-05-19T16:24:25Z, INFO] Initialization of TWarehouse.
+[2019-05-19T16:24:25Z, INFO] Initialization of supplyCosts.
+[2019-05-19T16:24:25Z, INFO] Initialization of TSupplyCost.
+[2019-05-19T16:24:25Z, INFO] Initialization of totalOpeningCost.
+[2019-05-19T16:24:25Z, INFO] Initialization of Open.
+[2019-05-19T16:24:25Z, INFO] Initialization of totalSupplyCost.
+[2019-05-19T16:24:25Z, INFO] Initialization of stores.
+[2019-05-19T16:24:25Z, INFO] Initialization of Supply.
+[2019-05-19T16:24:25Z, INFO] Initialization of ctEachStoreHasOneWarehouse.
+[2019-05-19T16:24:25Z, INFO] Initialization of ctUseOpenWarehouses.
+[2019-05-19T16:24:25Z, INFO] Initialization of ctMaxUseOfWarehouse.
+[2019-05-19T16:24:25Z, WARN] Effective number of workers to be used for solve has been updated to: '10' (original value was: '0')
+[2019-05-19T16:24:25Z, INFO] CPXPARAM_Threads                                 10
+[2019-05-19T16:24:25Z, INFO] Tried aggregator 1 time.
+[2019-05-19T16:24:25Z, INFO] MIP Presolve eliminated 20 rows and 0 columns.
+[2019-05-19T16:24:25Z, INFO] MIP Presolve modified 2 coefficients.
+[2019-05-19T16:24:25Z, INFO] Reduced MIP has 45 rows, 55 columns, and 162 nonzeros.
+[2019-05-19T16:24:25Z, INFO] Reduced MIP has 55 binaries, 0 generals, 0 SOSs, and 0 indicators.
+[2019-05-19T16:24:25Z, INFO] Presolve time = 0.00 sec. (0.13 ticks)
+[2019-05-19T16:24:25Z, INFO] Found incumbent of value 658.000000 after 0.00 sec. (0.28 ticks)
+[2019-05-19T16:24:25Z, INFO] Probing time = 0.00 sec. (0.04 ticks)
+[2019-05-19T16:24:25Z, INFO] Tried aggregator 1 time.
+[2019-05-19T16:24:25Z, INFO] Reduced MIP has 45 rows, 55 columns, and 162 nonzeros.
+[2019-05-19T16:24:25Z, INFO] Reduced MIP has 55 binaries, 0 generals, 0 SOSs, and 0 indicators.
+[2019-05-19T16:24:25Z, INFO] Presolve time = 0.00 sec. (0.12 ticks)
+[2019-05-19T16:24:25Z, INFO] Probing time = 0.00 sec. (0.04 ticks)
+[2019-05-19T16:24:25Z, INFO] Clique table members: 42.
+[2019-05-19T16:24:25Z, INFO] MIP emphasis: balance optimality and feasibility.
+[2019-05-19T16:24:25Z, INFO] MIP search method: dynamic search.
+[2019-05-19T16:24:25Z, INFO] Parallel mode: deterministic, using up to 10 threads.
+[2019-05-19T16:24:25Z, INFO] Root relaxation solution time = 0.00 sec. (0.09 ticks)
+[2019-05-19T16:24:25Z, INFO]         Nodes                                         Cuts/
+[2019-05-19T16:24:25Z, INFO]    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+[2019-05-19T16:24:25Z, INFO] *     0+    0                          658.0000        0.0000           100.00%
+[2019-05-19T16:24:25Z, INFO] *     0+    0                          464.0000        0.0000           100.00%
+[2019-05-19T16:24:25Z, INFO] *     0+    0                          437.0000        0.0000           100.00%
+[2019-05-19T16:24:25Z, INFO] *     0     0      integral     0      383.0000      383.0000       18    0.00%
+[2019-05-19T16:24:25Z, INFO] Elapsed time = 0.01 sec. (0.67 ticks, tree = 0.00 MB, solutions = 4)
+[2019-05-19T16:24:25Z, INFO] Root node processing (before b&c):
+[2019-05-19T16:24:25Z, INFO]   Real time             =    0.01 sec. (0.67 ticks)
+[2019-05-19T16:24:25Z, INFO] Parallel b&c, 10 threads:
+[2019-05-19T16:24:25Z, INFO]   Real time             =    0.00 sec. (0.00 ticks)
+[2019-05-19T16:24:25Z, INFO]   Sync time (average)   =    0.00 sec.
+[2019-05-19T16:24:25Z, INFO]   Wait time (average)   =    0.00 sec.
+[2019-05-19T16:24:25Z, INFO]                           ------------
+[2019-05-19T16:24:25Z, INFO] Total (root+branch&cut) =    0.01 sec. (0.67 ticks)
+[2019-05-19T16:24:25Z, INFO] Initialization of network.
+[2019-05-19T16:24:25Z, INFO] Initialization of TSuppliedStore.
+[2019-05-19T16:24:25Z, INFO] Initialization of OpenWarehouses.
+[2019-05-19T16:24:25Z, INFO] * Open Warehouses= {"Bonn" "Bordeaux" "London" "Rome"}
+[2019-05-19T16:24:25Z, INFO] Initialization of StoresSupplied.
+[2019-05-19T16:24:25Z, INFO] * stores supplied by Bonn:  {4}
+[2019-05-19T16:24:25Z, INFO] * stores supplied by Bordeaux:  {2 6 7 9}
+[2019-05-19T16:24:25Z, INFO] * stores supplied by London:  {8 10}
+[2019-05-19T16:24:25Z, INFO] * stores supplied by Rome:  {1 3 5}
+[2019-05-19T16:24:25Z, WARN] OPL set of type: 'STRING' in post-processing is not supported for output data on the Cloud. OPL element: 'OpenWarehouses' will not be exported.
+[2019-05-19T16:24:25Z, WARN] OPL type: 'ARRAY' in post-processing is not supported for output data on the Cloud. OPL element: 'StoresSupplied' will not be exported.
+[2019-05-19T16:24:25Z, INFO] Total time spent in post processing: 3 msecs.
+[2019-05-19T16:24:25Z, INFO] Solve finished with status: OPTIMAL_SOLUTION.

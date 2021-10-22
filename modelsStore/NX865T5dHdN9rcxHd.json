@@ -1,0 +1,33 @@
+{
+  "network" : [ {
+    "warehouseName" : "Bonn",
+    "storeId" : 4
+  }, {
+    "warehouseName" : "Bordeaux",
+    "storeId" : 2
+  }, {
+    "warehouseName" : "Bordeaux",
+    "storeId" : 6
+  }, {
+    "warehouseName" : "Bordeaux",
+    "storeId" : 7
+  }, {
+    "warehouseName" : "Bordeaux",
+    "storeId" : 9
+  }, {
+    "warehouseName" : "London",
+    "storeId" : 8
+  }, {
+    "warehouseName" : "London",
+    "storeId" : 10
+  }, {
+    "warehouseName" : "Rome",
+    "storeId" : 1
+  }, {
+    "warehouseName" : "Rome",
+    "storeId" : 3
+  }, {
+    "warehouseName" : "Rome",
+    "storeId" : 5
+  } ]
+}

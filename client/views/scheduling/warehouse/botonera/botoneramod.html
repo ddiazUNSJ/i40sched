@@ -1,0 +1,18 @@
+<template name="botoneramod">
+
+  {{#if isOk}}
+  <div class="text-center cont">
+  	<img src="/ok.png" title="modelo cargado" width="40" height="40">
+  	<span id="eliminaMod" class="glyphicon glyphicon-remove" title="remover archivo"></span>
+  
+    <p id="pimg"><a  href="">  {{nombre}}</a></p>
+  </div>
+  {{else}}
+  <button id="botonmod" type="button" class="btn btn-sm btn-success"  >
+
+  	Agregar modelo <span class="glyphicon glyphicon-plus"></span>
+
+  </button>
+  {{/if}} 
+
+</template>

@@ -1,0 +1,47 @@
+<template name="usersActionBtns">
+
+	<!-- <button id="btnUpdate" type="button" class="btn btn-sm btn-default"  data-toggle="modal" data-target="#updateModal">
+
+		<span class="glyphicon glyphicon-pencil"></span>
+
+	</button>
+
+	<button id="btnRemove" type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#removeModal">
+
+		<span class="glyphicon glyphicon-trash"></span>
+
+	</button>
+    <button id="btnChangePass" type="button" class="btn btn-sm btn-default"  data-toggle="modal" data-target="#changePassModal">
+
+		<span class="glyphicon glyphicon glyphicon-record"></span>
+	</button>
+
+	<button id="btnNewRol" type="button" class="btn btn-sm btn-default"  data-toggle="modal" data-target="#changeRolModal">
+
+		<span class="glyphicon glyphicon-registration-mark"></span>
+	</button> -->
+
+<!-- <div class="col-sm-10"><select class="form-control m-b" name="account">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                </select>
+                                 </div> -->
+
+<form class="form-horizontal">
+      <div class="col-sm-10">  
+          <select id="grupo-select" class="form-control m-b " >
+	          <option disabled="disabled" value="elije" selected="selected">Elegir Accion</option> 
+	          <option value="changeRol">Cambiar Rol</option>
+	          <option value="changePass">Cambiar Password</option>
+	          <option value="changeUserName">Cambiar UserName</option>
+	          <option value="disableUser">Inhabilitar Usuario</option>
+	          <option value="enableduser">Habilitar Usuario</option>
+	          <option value="changeEmail">Cambiar email</option>
+
+           </select>
+      </div>
+</form>
+
+</template>

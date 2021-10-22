@@ -1,0 +1,654 @@
+{
+  "constructionPlan" : [ {
+    "house" : 1,
+    "task.name" : "masonry",
+    "task.duration" : 35,
+    "startDate" : 70,
+    "endDate" : 105
+  }, {
+    "house" : 1,
+    "task.name" : "carpentry",
+    "task.duration" : 15,
+    "startDate" : 170,
+    "endDate" : 185
+  }, {
+    "house" : 1,
+    "task.name" : "plumbing",
+    "task.duration" : 40,
+    "startDate" : 255,
+    "endDate" : 295
+  }, {
+    "house" : 1,
+    "task.name" : "ceiling",
+    "task.duration" : 15,
+    "startDate" : 105,
+    "endDate" : 120
+  }, {
+    "house" : 1,
+    "task.name" : "roofing",
+    "task.duration" : 5,
+    "startDate" : 225,
+    "endDate" : 230
+  }, {
+    "house" : 1,
+    "task.name" : "painting",
+    "task.duration" : 10,
+    "startDate" : 120,
+    "endDate" : 130
+  }, {
+    "house" : 1,
+    "task.name" : "windows",
+    "task.duration" : 5,
+    "startDate" : 265,
+    "endDate" : 270
+  }, {
+    "house" : 1,
+    "task.name" : "facade",
+    "task.duration" : 10,
+    "startDate" : 295,
+    "endDate" : 305
+  }, {
+    "house" : 1,
+    "task.name" : "garden",
+    "task.duration" : 5,
+    "startDate" : 295,
+    "endDate" : 300
+  }, {
+    "house" : 1,
+    "task.name" : "moving",
+    "task.duration" : 5,
+    "startDate" : 305,
+    "endDate" : 310
+  }, {
+    "house" : 2,
+    "task.name" : "masonry",
+    "task.duration" : 35,
+    "startDate" : 105,
+    "endDate" : 140
+  }, {
+    "house" : 2,
+    "task.name" : "carpentry",
+    "task.duration" : 15,
+    "startDate" : 185,
+    "endDate" : 200
+  }, {
+    "house" : 2,
+    "task.name" : "plumbing",
+    "task.duration" : 40,
+    "startDate" : 175,
+    "endDate" : 215
+  }, {
+    "house" : 2,
+    "task.name" : "ceiling",
+    "task.duration" : 15,
+    "startDate" : 155,
+    "endDate" : 170
+  }, {
+    "house" : 2,
+    "task.name" : "roofing",
+    "task.duration" : 5,
+    "startDate" : 215,
+    "endDate" : 220
+  }, {
+    "house" : 2,
+    "task.name" : "painting",
+    "task.duration" : 10,
+    "startDate" : 170,
+    "endDate" : 180
+  }, {
+    "house" : 2,
+    "task.name" : "windows",
+    "task.duration" : 5,
+    "startDate" : 270,
+    "endDate" : 275
+  }, {
+    "house" : 2,
+    "task.name" : "facade",
+    "task.duration" : 10,
+    "startDate" : 245,
+    "endDate" : 255
+  }, {
+    "house" : 2,
+    "task.name" : "garden",
+    "task.duration" : 5,
+    "startDate" : 220,
+    "endDate" : 225
+  }, {
+    "house" : 2,
+    "task.name" : "moving",
+    "task.duration" : 5,
+    "startDate" : 275,
+    "endDate" : 280
+  }, {
+    "house" : 3,
+    "task.name" : "masonry",
+    "task.duration" : 35,
+    "startDate" : 0,
+    "endDate" : 35
+  }, {
+    "house" : 3,
+    "task.name" : "carpentry",
+    "task.duration" : 15,
+    "startDate" : 35,
+    "endDate" : 50
+  }, {
+    "house" : 3,
+    "task.name" : "plumbing",
+    "task.duration" : 40,
+    "startDate" : 215,
+    "endDate" : 255
+  }, {
+    "house" : 3,
+    "task.name" : "ceiling",
+    "task.duration" : 15,
+    "startDate" : 50,
+    "endDate" : 65
+  }, {
+    "house" : 3,
+    "task.name" : "roofing",
+    "task.duration" : 5,
+    "startDate" : 295,
+    "endDate" : 300
+  }, {
+    "house" : 3,
+    "task.name" : "painting",
+    "task.duration" : 10,
+    "startDate" : 65,
+    "endDate" : 75
+  }, {
+    "house" : 3,
+    "task.name" : "windows",
+    "task.duration" : 5,
+    "startDate" : 305,
+    "endDate" : 310
+  }, {
+    "house" : 3,
+    "task.name" : "facade",
+    "task.duration" : 10,
+    "startDate" : 300,
+    "endDate" : 310
+  }, {
+    "house" : 3,
+    "task.name" : "garden",
+    "task.duration" : 5,
+    "startDate" : 300,
+    "endDate" : 305
+  }, {
+    "house" : 3,
+    "task.name" : "moving",
+    "task.duration" : 5,
+    "startDate" : 313,
+    "endDate" : 318
+  }, {
+    "house" : 4,
+    "task.name" : "masonry",
+    "task.duration" : 35,
+    "startDate" : 0,
+    "endDate" : 35
+  }, {
+    "house" : 4,
+    "task.name" : "carpentry",
+    "task.duration" : 15,
+    "startDate" : 140,
+    "endDate" : 155
+  }, {
+    "house" : 4,
+    "task.name" : "plumbing",
+    "task.duration" : 40,
+    "startDate" : 65,
+    "endDate" : 105
+  }, {
+    "house" : 4,
+    "task.name" : "ceiling",
+    "task.duration" : 15,
+    "startDate" : 35,
+    "endDate" : 50
+  }, {
+    "house" : 4,
+    "task.name" : "roofing",
+    "task.duration" : 5,
+    "startDate" : 230,
+    "endDate" : 235
+  }, {
+    "house" : 4,
+    "task.name" : "painting",
+    "task.duration" : 10,
+    "startDate" : 50,
+    "endDate" : 60
+  }, {
+    "house" : 4,
+    "task.name" : "windows",
+    "task.duration" : 5,
+    "startDate" : 275,
+    "endDate" : 280
+  }, {
+    "house" : 4,
+    "task.name" : "facade",
+    "task.duration" : 10,
+    "startDate" : 235,
+    "endDate" : 245
+  }, {
+    "house" : 4,
+    "task.name" : "garden",
+    "task.duration" : 5,
+    "startDate" : 235,
+    "endDate" : 240
+  }, {
+    "house" : 4,
+    "task.name" : "moving",
+    "task.duration" : 5,
+    "startDate" : 280,
+    "endDate" : 285
+  }, {
+    "house" : 5,
+    "task.name" : "masonry",
+    "task.duration" : 35,
+    "startDate" : 35,
+    "endDate" : 70
+  }, {
+    "house" : 5,
+    "task.name" : "carpentry",
+    "task.duration" : 15,
+    "startDate" : 200,
+    "endDate" : 215
+  }, {
+    "house" : 5,
+    "task.name" : "plumbing",
+    "task.duration" : 40,
+    "startDate" : 135,
+    "endDate" : 175
+  }, {
+    "house" : 5,
+    "task.name" : "ceiling",
+    "task.duration" : 15,
+    "startDate" : 120,
+    "endDate" : 135
+  }, {
+    "house" : 5,
+    "task.name" : "roofing",
+    "task.duration" : 5,
+    "startDate" : 220,
+    "endDate" : 225
+  }, {
+    "house" : 5,
+    "task.name" : "painting",
+    "task.duration" : 10,
+    "startDate" : 135,
+    "endDate" : 145
+  }, {
+    "house" : 5,
+    "task.name" : "windows",
+    "task.duration" : 5,
+    "startDate" : 280,
+    "endDate" : 285
+  }, {
+    "house" : 5,
+    "task.name" : "facade",
+    "task.duration" : 10,
+    "startDate" : 255,
+    "endDate" : 265
+  }, {
+    "house" : 5,
+    "task.name" : "garden",
+    "task.duration" : 5,
+    "startDate" : 225,
+    "endDate" : 230
+  }, {
+    "house" : 5,
+    "task.name" : "moving",
+    "task.duration" : 5,
+    "startDate" : 285,
+    "endDate" : 290
+  } ],
+  "workerPlan" : [ {
+    "skill.worker" : "Joe",
+    "skill.task" : "masonry",
+    "skill.level" : 9,
+    "house" : 1,
+    "startDate" : 70,
+    "endDate" : 105
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "masonry",
+    "skill.level" : 9,
+    "house" : 2,
+    "startDate" : 105,
+    "endDate" : 140
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "masonry",
+    "skill.level" : 9,
+    "house" : 4,
+    "startDate" : 0,
+    "endDate" : 35
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "masonry",
+    "skill.level" : 9,
+    "house" : 5,
+    "startDate" : 35,
+    "endDate" : 70
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "carpentry",
+    "skill.level" : 7,
+    "house" : 1,
+    "startDate" : 170,
+    "endDate" : 185
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "carpentry",
+    "skill.level" : 7,
+    "house" : 2,
+    "startDate" : 185,
+    "endDate" : 200
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "carpentry",
+    "skill.level" : 7,
+    "house" : 4,
+    "startDate" : 140,
+    "endDate" : 155
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "carpentry",
+    "skill.level" : 7,
+    "house" : 5,
+    "startDate" : 200,
+    "endDate" : 215
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "ceiling",
+    "skill.level" : 5,
+    "house" : 2,
+    "startDate" : 155,
+    "endDate" : 170
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "roofing",
+    "skill.level" : 6,
+    "house" : 1,
+    "startDate" : 225,
+    "endDate" : 230
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "roofing",
+    "skill.level" : 6,
+    "house" : 2,
+    "startDate" : 215,
+    "endDate" : 220
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "roofing",
+    "skill.level" : 6,
+    "house" : 4,
+    "startDate" : 230,
+    "endDate" : 235
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "roofing",
+    "skill.level" : 6,
+    "house" : 5,
+    "startDate" : 220,
+    "endDate" : 225
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "windows",
+    "skill.level" : 8,
+    "house" : 1,
+    "startDate" : 265,
+    "endDate" : 270
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "windows",
+    "skill.level" : 8,
+    "house" : 2,
+    "startDate" : 270,
+    "endDate" : 275
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "windows",
+    "skill.level" : 8,
+    "house" : 3,
+    "startDate" : 305,
+    "endDate" : 310
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "windows",
+    "skill.level" : 8,
+    "house" : 4,
+    "startDate" : 275,
+    "endDate" : 280
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "windows",
+    "skill.level" : 8,
+    "house" : 5,
+    "startDate" : 280,
+    "endDate" : 285
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "facade",
+    "skill.level" : 5,
+    "house" : 1,
+    "startDate" : 295,
+    "endDate" : 305
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "facade",
+    "skill.level" : 5,
+    "house" : 2,
+    "startDate" : 245,
+    "endDate" : 255
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "facade",
+    "skill.level" : 5,
+    "house" : 4,
+    "startDate" : 235,
+    "endDate" : 245
+  }, {
+    "skill.worker" : "Joe",
+    "skill.task" : "facade",
+    "skill.level" : 5,
+    "house" : 5,
+    "startDate" : 255,
+    "endDate" : 265
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "masonry",
+    "skill.level" : 5,
+    "house" : 3,
+    "startDate" : 0,
+    "endDate" : 35
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "plumbing",
+    "skill.level" : 7,
+    "house" : 1,
+    "startDate" : 255,
+    "endDate" : 295
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "plumbing",
+    "skill.level" : 7,
+    "house" : 2,
+    "startDate" : 175,
+    "endDate" : 215
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "plumbing",
+    "skill.level" : 7,
+    "house" : 3,
+    "startDate" : 215,
+    "endDate" : 255
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "plumbing",
+    "skill.level" : 7,
+    "house" : 4,
+    "startDate" : 65,
+    "endDate" : 105
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "plumbing",
+    "skill.level" : 7,
+    "house" : 5,
+    "startDate" : 135,
+    "endDate" : 175
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "ceiling",
+    "skill.level" : 8,
+    "house" : 1,
+    "startDate" : 105,
+    "endDate" : 120
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "ceiling",
+    "skill.level" : 8,
+    "house" : 3,
+    "startDate" : 50,
+    "endDate" : 65
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "ceiling",
+    "skill.level" : 8,
+    "house" : 4,
+    "startDate" : 35,
+    "endDate" : 50
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "ceiling",
+    "skill.level" : 8,
+    "house" : 5,
+    "startDate" : 120,
+    "endDate" : 135
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "roofing",
+    "skill.level" : 7,
+    "house" : 3,
+    "startDate" : 295,
+    "endDate" : 300
+  }, {
+    "skill.worker" : "Jack",
+    "skill.task" : "facade",
+    "skill.level" : 5,
+    "house" : 3,
+    "startDate" : 300,
+    "endDate" : 310
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "carpentry",
+    "skill.level" : 5,
+    "house" : 3,
+    "startDate" : 35,
+    "endDate" : 50
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "painting",
+    "skill.level" : 6,
+    "house" : 1,
+    "startDate" : 120,
+    "endDate" : 130
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "painting",
+    "skill.level" : 6,
+    "house" : 2,
+    "startDate" : 170,
+    "endDate" : 180
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "painting",
+    "skill.level" : 6,
+    "house" : 3,
+    "startDate" : 65,
+    "endDate" : 75
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "painting",
+    "skill.level" : 6,
+    "house" : 4,
+    "startDate" : 50,
+    "endDate" : 60
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "painting",
+    "skill.level" : 6,
+    "house" : 5,
+    "startDate" : 135,
+    "endDate" : 145
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "garden",
+    "skill.level" : 9,
+    "house" : 1,
+    "startDate" : 295,
+    "endDate" : 300
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "garden",
+    "skill.level" : 9,
+    "house" : 2,
+    "startDate" : 220,
+    "endDate" : 225
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "garden",
+    "skill.level" : 9,
+    "house" : 3,
+    "startDate" : 300,
+    "endDate" : 305
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "garden",
+    "skill.level" : 9,
+    "house" : 4,
+    "startDate" : 235,
+    "endDate" : 240
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "garden",
+    "skill.level" : 9,
+    "house" : 5,
+    "startDate" : 225,
+    "endDate" : 230
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "moving",
+    "skill.level" : 8,
+    "house" : 1,
+    "startDate" : 305,
+    "endDate" : 310
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "moving",
+    "skill.level" : 8,
+    "house" : 2,
+    "startDate" : 275,
+    "endDate" : 280
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "moving",
+    "skill.level" : 8,
+    "house" : 3,
+    "startDate" : 313,
+    "endDate" : 318
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "moving",
+    "skill.level" : 8,
+    "house" : 4,
+    "startDate" : 280,
+    "endDate" : 285
+  }, {
+    "skill.worker" : "Jim",
+    "skill.task" : "moving",
+    "skill.level" : 8,
+    "house" : 5,
+    "startDate" : 285,
+    "endDate" : 290
+  } ]
+}

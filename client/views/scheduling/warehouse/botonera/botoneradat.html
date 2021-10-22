@@ -1,0 +1,20 @@
+<template name="botoneradat">
+
+  {{#if isOk}}
+  <div id="img" class="text-center cont">
+  	<img src="/ok.png" title="modelo cargado" width="40" height="40">
+  	<span id="eliminaDat" class="glyphicon glyphicon-remove" title="remover archivo"></span>
+                  
+  	<p id="pimg"><a  href="">  {{nombre}}</a></p>
+  </div>
+  
+  {{else}}
+  <button id="botondat" type="button" class="btn btn-sm btn-success"  >
+
+  	Agregar dato <span class="glyphicon glyphicon-plus"></span>
+
+  </button>
+  {{/if}} 
+
+
+</template>

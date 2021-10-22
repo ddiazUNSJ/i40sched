@@ -1,0 +1,60 @@
+
+<!-- <template name="adminConfig">
+ <div id="adminConfig">
+ 
+	<div class="wrapper wrapper-content animated fadeInRight">
+ 
+		<div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Gestion de Datos del Problema</h5>
+                        {{>iboxTools}}
+                    </div>
+                    
+
+ 
+                     {{#autoForm  schema=traeSchema  id="updateConfig" type="method-update"   doc=selectedConfigDoc   meteormethod="updateConfig"  }} 
+                         <div class="ibox-content">
+                           
+                           {{> afQuickField name="nroCasas" }}
+	                        <div class="ibox-content">
+	                         <button class="btn btn-primary pull-right" type="submit"> Guardar</button>
+	                        </div>
+                 		</div> 
+                     {{/autoForm}} 
+
+                    
+					 
+
+                </div>
+            </div>
+		</div>          
+    </div>
+  </div>
+
+
+ </template> -->
+
+<template name="adminConfig">
+ 
+    <!-- <div id="gantt_here" style='width: 100%; height: 200px;'></div> -->
+
+    <h2>Chart 1 - Hello World</h2>
+        <div id="chart" width="100%"></div>
+
+    <h2>Chart 2 - Adding Google Charts packages</h2>
+      <p>The chart below only works if you add an example.json file with:</p>
+        <pre>{
+              "public": {
+              "rafaelhdr-google-charts": {
+              "packages": ["corechart", "timeline", "gauge", "map"]
+                }
+               }
+            }
+        </pre>
+    <p> And run <pre>meteor --settings example.json</pre></p>           
+     <p>More details about settings.json on <a target="_blank" href="https://themeteorchef.com/snippets/making-use-of-settings-json/">Making Use of Settings.json</a></p>
+    <div id="chart2" width="100%"></div>
+ 
+</template>

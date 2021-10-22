@@ -1,0 +1,128 @@
+[2019-05-29T21:32:19Z, INFO] Initialization of NbHouses.
+[2019-05-29T21:32:19Z, INFO] Initialization of WorkerNames.
+[2019-05-29T21:32:19Z, INFO] Initialization of TaskNames.
+[2019-05-29T21:32:19Z, INFO] Initialization of Duration.
+[2019-05-29T21:32:19Z, INFO] Initialization of Worker.
+[2019-05-29T21:32:19Z, INFO] Initialization of ReleaseDate.
+[2019-05-29T21:32:19Z, INFO] Initialization of Houses.
+[2019-05-29T21:32:19Z, INFO] Initialization of DueDate.
+[2019-05-29T21:32:19Z, INFO] Initialization of Weight.
+[2019-05-29T21:32:19Z, INFO] Initialization of Precedences.
+[2019-05-29T21:32:19Z, INFO] Initialization of Precedence.
+[2019-05-29T21:32:19Z, INFO] Initialization of houses.
+[2019-05-29T21:32:19Z, INFO] Initialization of itvs.
+[2019-05-29T21:32:19Z, INFO] Initialization of workers.
+[2019-05-29T21:32:19Z, INFO] Initialization of transitionTimes.
+[2019-05-29T21:32:19Z, INFO] Initialization of triplet.
+[2019-05-29T21:32:19Z, WARN] Effective number of workers to be used for solve has been updated to: '10' (original value was: '-1')
+[2019-05-29T21:32:19Z, INFO]  ! ----------------------------------------------------------------------------
+[2019-05-29T21:32:19Z, INFO]  ! Minimization problem - 57 variables, 80 constraints
+[2019-05-29T21:32:19Z, INFO]  ! FailLimit            = 30000
+[2019-05-29T21:32:19Z, INFO]  ! TimeLimit            = 60
+[2019-05-29T21:32:19Z, INFO]  ! Workers              = 10
+[2019-05-29T21:32:19Z, INFO]  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+[2019-05-29T21:32:19Z, INFO]  !  . Log search space  : 282.2 (before), 282.2 (after)
+[2019-05-29T21:32:19Z, INFO]  !  . Memory usage      : 581.0 kB (before), 581.0 kB (after)
+[2019-05-29T21:32:19Z, INFO]  ! Using parallel search with 10 workers.
+[2019-05-29T21:32:19Z, INFO]  ! ----------------------------------------------------------------------------
+[2019-05-29T21:32:19Z, INFO]  !          Best Branches  Non-fixed    W       Branch decision
+[2019-05-29T21:32:19Z, INFO]                         0         57                 -
+[2019-05-29T21:32:19Z, INFO]  + New bound is 200
+[2019-05-29T21:32:20Z, INFO]  ! Using temporal relaxation.
+[2019-05-29T21:32:20Z, INFO]                         0         57    1            -
+[2019-05-29T21:32:20Z, INFO]  + New bound is 450
+[2019-05-29T21:32:20Z, INFO]  *         35212      101  0.12s        1      (gap is 98.72%)
+[2019-05-29T21:32:20Z, WARN] No element declared in post-processing, the output file will be empty.
+[2019-05-29T21:32:20Z, INFO]  *         21532      235  0.12s        1      (gap is 97.91%)
+[2019-05-29T21:32:20Z, WARN] No element declared in post-processing, the output file will be empty.
+[2019-05-29T21:32:20Z, INFO]  *         20236      569  0.12s        6      (gap is 97.78%)
+[2019-05-29T21:32:20Z, WARN] No element declared in post-processing, the output file will be empty.
+[2019-05-29T21:32:20Z, INFO]            20236     1000         31    1   F   on _itv25
+[2019-05-29T21:32:20Z, INFO]            20236     1000         31    2       on _itv12
+[2019-05-29T21:32:20Z, INFO]            20236     1000         32    3   F   on _itv38
+[2019-05-29T21:32:20Z, INFO]            20236     1000         28    4   F   on _itv37
+[2019-05-29T21:32:20Z, INFO]            20236     1000         31    5       on _itv38
+[2019-05-29T21:32:20Z, INFO]            20236     1000          3    6       on _itv25
+[2019-05-29T21:32:20Z, INFO]            20236     1000         31    7       on _itv23
+[2019-05-29T21:32:20Z, INFO]            20236     1000          3    8   F   on _itv25
+[2019-05-29T21:32:20Z, INFO]            20236     1000         31    9   F   on _itv37
+[2019-05-29T21:32:20Z, INFO]            20236     1000         22   10   F   on _itv12
+[2019-05-29T21:32:20Z, INFO]  *         18763     1896  0.12s        6      (gap is 97.60%)
+[2019-05-29T21:32:20Z, WARN] No element declared in post-processing, the output file will be empty.
+[2019-05-29T21:32:20Z, INFO]            18763     2000         26    7       on _itv22
+[2019-05-29T21:32:20Z, INFO]            18763     3000         25    7   F   on _itv37
+[2019-05-29T21:32:20Z, INFO]            18763     2000         26    8       on _itv19
+[2019-05-29T21:32:20Z, INFO]            18763     3000         25    8   F   on _itv25
+[2019-05-29T21:32:20Z, INFO]  ! Time = 0.22s, Average fail depth = 23, Memory usage = 7.5 MB
+[2019-05-29T21:32:20Z, INFO]  ! Current bound is 450 (gap is 97.60%)
+[2019-05-29T21:32:20Z, INFO]  !          Best Branches  Non-fixed    W       Branch decision
+[2019-05-29T21:32:20Z, INFO]            18763     2000         26    9       on _itv20
+[2019-05-29T21:32:20Z, INFO]            18763     3000         25    9   F   on _itv20
+[2019-05-29T21:32:20Z, INFO]            18763     2000         22   10   F   on _itv10
+[2019-05-29T21:32:20Z, INFO]            18763     3000         25   10   F   on _itv17
+[2019-05-29T21:32:20Z, INFO]            18763     2000         26    1       on _itv10
+[2019-05-29T21:32:20Z, INFO]            18763     3000         25    1       on _itv38
+[2019-05-29T21:32:20Z, INFO]            18763     2000         22    2   F   on _itv12
+[2019-05-29T21:32:20Z, INFO]            18763     3000         25    2       on _itv37
+[2019-05-29T21:32:20Z, INFO]            18763     2000         26    3   F   on _itv22
+[2019-05-29T21:32:20Z, INFO]            18763     3000         25    3       on _itv23
+[2019-05-29T21:32:20Z, INFO]            18763     2000         26    4       on _itv10
+[2019-05-29T21:32:20Z, INFO]            18763     3000         25    4       on _itv37
+[2019-05-29T21:32:20Z, INFO]            18763     2000         21    5       on _itv25
+[2019-05-29T21:32:20Z, INFO]            18763     3000         25    5   F   on _itv37
+[2019-05-29T21:32:20Z, INFO]            18763     2000          1    6   F   on _itv19
+[2019-05-29T21:32:20Z, INFO]            18763     3000         20    6       on _itv38
+[2019-05-29T21:32:20Z, INFO]            18763     4000         31    7   F   on _itv11
+[2019-05-29T21:32:20Z, INFO]            18763     4000         31    8       on _itv23
+[2019-05-29T21:32:20Z, INFO]            18763     4000         35    9   F   on _itv13
+[2019-05-29T21:32:20Z, INFO]            18763     4000         33   10       on _itv13
+[2019-05-29T21:32:20Z, INFO]  ! Time = 0.30s, Average fail depth = 23, Memory usage = 7.5 MB
+[2019-05-29T21:32:20Z, INFO]  ! Current bound is 450 (gap is 97.60%)
+[2019-05-29T21:32:20Z, INFO]  !          Best Branches  Non-fixed    W       Branch decision
+[2019-05-29T21:32:20Z, INFO]            18763     4000         35    1       on _itv10
+[2019-05-29T21:32:20Z, INFO]            18763     4000         33    2       on _itv11
+[2019-05-29T21:32:20Z, INFO]            18763     4000         31    3       on _itv25
+[2019-05-29T21:32:20Z, INFO]            18763     4000         31    4   F   on _itv37
+[2019-05-29T21:32:20Z, INFO]            18763     4000         31    5   F   on _itv39
+[2019-05-29T21:32:20Z, INFO]            18763     4000         31    6   F   on _itv37
+[2019-05-29T21:32:20Z, INFO]            18763     5000         12    7       on _itv45
+[2019-05-29T21:32:20Z, INFO]            18763     5000         21    8       on _itv26
+[2019-05-29T21:32:20Z, INFO]            18763     5000         26    9   F   on _itv28
+[2019-05-29T21:32:20Z, INFO]            18763     5000         17   10       on _itv32
+[2019-05-29T21:32:20Z, INFO]            18763     5000         14    1       on _itv31
+[2019-05-29T21:32:20Z, INFO]            18763     5000         29    2   F   on _itv10
+[2019-05-29T21:32:20Z, INFO]            18763     5000         28    3       on _itv22
+[2019-05-29T21:32:20Z, INFO]            18763     5000         29    4   F   on _itv13
+[2019-05-29T21:32:20Z, INFO]            18763     5000         29    5   F   on _itv12
+[2019-05-29T21:32:20Z, INFO]            18763     5000         26    6       on _itv37
+[2019-05-29T21:32:20Z, INFO]            18763     6000         20    9       on _itv32
+[2019-05-29T21:32:20Z, INFO]            18763     6000         20    2   F   on _itv31
+[2019-05-29T21:32:20Z, INFO]            18763     6000         21    3       on _itv27
+[2019-05-29T21:32:20Z, INFO]            18763     6000         21    4       on _itv27
+[2019-05-29T21:32:20Z, INFO]  ! Time = 0.52s, Average fail depth = 24, Memory usage = 7.6 MB
+[2019-05-29T21:32:20Z, INFO]  ! Current bound is 450 (gap is 97.60%)
+[2019-05-29T21:32:20Z, INFO]  !          Best Branches  Non-fixed    W       Branch decision
+[2019-05-29T21:32:20Z, INFO]            18763     6000         20    5   F   on _itv28
+[2019-05-29T21:32:20Z, INFO]            18763     6000         28    6       on _itv17
+[2019-05-29T21:32:20Z, INFO]  *         18746     5896  0.52s        7      (gap is 97.60%)
+[2019-05-29T21:32:20Z, WARN] No element declared in post-processing, the output file will be empty.
+[2019-05-29T21:32:20Z, INFO]            18746     6000          1    7   F   on _itv19
+[2019-05-29T21:32:20Z, INFO]  *         18741     5916  0.52s        8      (gap is 97.60%)
+[2019-05-29T21:32:20Z, WARN] No element declared in post-processing, the output file will be empty.
+[2019-05-29T21:32:20Z, INFO]            18741     6000          1    8       on _itv13
+[2019-05-29T21:32:20Z, INFO]            18741     6000          1   10   F   on _itv25
+[2019-05-29T21:32:20Z, INFO]            18741     6000          1    1       on _itv25
+[2019-05-29T21:32:20Z, INFO]            18741     7000         20    2   F   on _itv10
+[2019-05-29T21:32:20Z, INFO]            18741     7000         20    3   F   on _itv38
+[2019-05-29T21:32:20Z, INFO]  ! ----------------------------------------------------------------------------
+[2019-05-29T21:32:20Z, INFO]  ! Search terminated by limit, 6 solutions found.
+[2019-05-29T21:32:20Z, INFO]  ! Best objective         : 18741 (gap is 97.60%)
+[2019-05-29T21:32:20Z, INFO]  ! Best bound             : 450
+[2019-05-29T21:32:20Z, INFO]  ! Number of branches     : 68296
+[2019-05-29T21:32:20Z, INFO]  ! Number of fails        : 30157
+[2019-05-29T21:32:20Z, INFO]  ! Total memory usage     : 8.0 MB (7.6 MB CP Optimizer + 0.5 MB Concert)
+[2019-05-29T21:32:20Z, INFO]  ! Time spent in solve    : 0.60s (0.60s engine + 0.00s extraction)
+[2019-05-29T21:32:20Z, INFO]  ! Search speed (br. / s) : 111960.7
+[2019-05-29T21:32:20Z, INFO]  ! ----------------------------------------------------------------------------
+[2019-05-29T21:32:20Z, INFO] Total time spent in post processing: 3 msecs.
+[2019-05-29T21:32:20Z, INFO] Solve finished with status: FEASIBLE_SOLUTION.

@@ -1,0 +1,50 @@
+<template name="adminModels">
+<div id="adminModels">
+<!-- <head>
+  <title>Simplest upload form</title>
+</head>
+
+<body>
+  <h1>Simplest upload form!</h1>
+  <p>See <a href="https://github.com/VeliovGroup/Meteor-Files">ostrio:files</a></p>
+
+  {{> uploadForm}}
+
+  {{> uploadedFiles}}
+</body> -->
+<!-- {{> modalAgregarModelo}} -->
+{{> pageHeading title='Gestion de los Modelos' category='Forms' }}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+            
+ 
+ 
+          <div class="col-md-7">
+                <div class="ibox float-e-margins">
+                  <div class="ibox-title">
+                        <h5>Modelos disponibles para procesar</h5>
+                        
+                        {{>modelsboxTools}}
+                   
+                    <div class="ibox-content">
+
+                        <div class="table-responsive">
+                       {{> tabular table=TabularTables.myFiles class="table table-striped table-bordered table-condensed"}}
+                        </div>
+
+                    </div>
+                  </div>  
+                </div>
+                
+
+          </div>
+         
+<img src="{{imageFile.link}}" alt="{{imageFile.name}}" />
+ 
+
+</div>
+
+
+</div>
+</template>

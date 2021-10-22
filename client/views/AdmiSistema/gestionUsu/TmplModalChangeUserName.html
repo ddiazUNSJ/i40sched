@@ -1,0 +1,29 @@
+<template name="TmplModalChangeUserName">
+
+	<div id="changeUserNameModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Cambiar UserName de Usuario</h4>
+				</div>
+
+				{{#autoForm schema=traeSchema id="afChangeUserName" type="method" validation="submit"  meteormethod="cambiarUserName" doc=selectedUserDoc}}
+                   <div class="modal-body"> 
+                    	<fieldset>
+					        {{> afQuickField  name='userId'  readonly=true}}
+						    {{> afQuickField  name='username'}}
+							
+					    </fieldset> 
+				   </div>
+				   <div class="modal-footer">  
+				          
+				          <button type="submit" class="btn btn-primary">Actualizar</button>
+				          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+				    </div>
+				{{/autoForm}}
+				
+			</div>
+		</div>
+	</div>
+</template>

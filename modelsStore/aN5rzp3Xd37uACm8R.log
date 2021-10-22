@@ -1,0 +1,484 @@
+[2019-05-29T22:00:59Z, INFO] Initialization of Planning.
+[2019-05-29T22:00:59Z, INFO] Initialization of TPlanning.
+[2019-05-29T22:00:59Z, INFO] Initialization of Workers.
+[2019-05-29T22:00:59Z, INFO] Initialization of Tasks.
+[2019-05-29T22:00:59Z, INFO] Initialization of TTask.
+[2019-05-29T22:00:59Z, INFO] Initialization of Skills.
+[2019-05-29T22:00:59Z, INFO] Initialization of TSkill.
+[2019-05-29T22:00:59Z, INFO] Initialization of Precedences.
+[2019-05-29T22:00:59Z, INFO] Initialization of Precedence.
+[2019-05-29T22:00:59Z, INFO] Initialization of Continuities.
+[2019-05-29T22:00:59Z, INFO] Initialization of Continuity.
+[2019-05-29T22:00:59Z, INFO] Initialization of Houses.
+[2019-05-29T22:00:59Z, INFO] Initialization of wtasks.
+[2019-05-29T22:00:59Z, INFO] Initialization of TaskPrecedences.
+[2019-05-29T22:00:59Z, INFO] Initialization of TTAskPrecedence.
+[2019-05-29T22:00:59Z, INFO] Initialization of tasks.
+[2019-05-29T22:00:59Z, WARN] Effective number of workers to be used for solve has been updated to: '10' (original value was: '-1')
+[2019-05-29T22:00:59Z, INFO]  ! ----------------------------------------------------------------------------
+[2019-05-29T22:00:59Z, INFO]  ! Maximization problem - 153 variables, 160 constraints
+[2019-05-29T22:00:59Z, INFO]  ! Presolve      : 20 extractables eliminated
+[2019-05-29T22:00:59Z, INFO]  ! FailLimit            = 10000
+[2019-05-29T22:00:59Z, INFO]  ! Workers              = 10
+[2019-05-29T22:00:59Z, INFO]  ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+[2019-05-29T22:00:59Z, INFO]  !  . Log search space  : 330.1 (before), 330.1 (after)
+[2019-05-29T22:00:59Z, INFO]  !  . Memory usage      : 991.8 kB (before), 991.8 kB (after)
+[2019-05-29T22:00:59Z, INFO]  ! Using parallel search with 10 workers.
+[2019-05-29T22:00:59Z, INFO]  ! ----------------------------------------------------------------------------
+[2019-05-29T22:00:59Z, INFO]  !          Best Branches  Non-fixed    W       Branch decision
+[2019-05-29T22:00:59Z, INFO]                         0        153                 -
+[2019-05-29T22:00:59Z, INFO]  + New bound is 385
+[2019-05-29T22:00:59Z, INFO]  ! Using temporal relaxation.
+[2019-05-29T22:00:59Z, INFO]                         0        150    1            -
+[2019-05-29T22:00:59Z, INFO]  + New bound is 366
+[2019-05-29T22:00:59Z, INFO]  *           331      167  0.19s        1      (gap is 10.57%)
+[2019-05-29T22:00:59Z, INFO] Initialization of constructionPlan.
+[2019-05-29T22:00:59Z, INFO] Initialization of THousePlan.
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: masonry - start: 70 ; end: 105
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: carpentry - start: 105 ; end: 120
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: plumbing - start: 150 ; end: 190
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: ceiling - start: 150 ; end: 165
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: roofing - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: painting - start: 165 ; end: 175
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: windows - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: facade - start: 260 ; end: 270
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: garden - start: 260 ; end: 265
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: moving - start: 295 ; end: 300
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: carpentry - start: 70 ; end: 85
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: plumbing - start: 230 ; end: 270
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: ceiling - start: 165 ; end: 180
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: roofing - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: painting - start: 180 ; end: 190
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: windows - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: facade - start: 280 ; end: 290
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: garden - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: moving - start: 290 ; end: 295
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: carpentry - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: plumbing - start: 70 ; end: 110
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: ceiling - start: 210 ; end: 225
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: roofing - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: painting - start: 235 ; end: 245
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: windows - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: facade - start: 290 ; end: 300
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: garden - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: moving - start: 300 ; end: 305
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: carpentry - start: 135 ; end: 150
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: plumbing - start: 190 ; end: 230
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: ceiling - start: 195 ; end: 210
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: roofing - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: painting - start: 210 ; end: 220
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: windows - start: 265 ; end: 270
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: facade - start: 240 ; end: 250
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: garden - start: 255 ; end: 260
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: moving - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: carpentry - start: 120 ; end: 135
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: plumbing - start: 110 ; end: 150
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: ceiling - start: 180 ; end: 195
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: roofing - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: painting - start: 195 ; end: 205
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: windows - start: 250 ; end: 255
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: facade - start: 250 ; end: 260
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: garden - start: 245 ; end: 250
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: moving - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] Initialization of workerPlan.
+[2019-05-29T22:00:59Z, INFO] Initialization of TWorkerPlan.
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: masonry - start: 70 ; end: 105
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: carpentry - start: 105 ; end: 120
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: carpentry - start: 135 ; end: 150
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: carpentry - start: 120 ; end: 135
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: ceiling - start: 150 ; end: 165
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: ceiling - start: 165 ; end: 180
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: ceiling - start: 210 ; end: 225
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: ceiling - start: 195 ; end: 210
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: ceiling - start: 180 ; end: 195
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: roofing - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: roofing - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: roofing - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: windows - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: windows - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: facade - start: 260 ; end: 270
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: facade - start: 240 ; end: 250
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: facade - start: 250 ; end: 260
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 2, Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 1, Task: plumbing - start: 150 ; end: 190
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 2, Task: plumbing - start: 230 ; end: 270
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: plumbing - start: 70 ; end: 110
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 4, Task: plumbing - start: 190 ; end: 230
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: plumbing - start: 110 ; end: 150
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 2, Task: roofing - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: roofing - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 2, Task: facade - start: 280 ; end: 290
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: facade - start: 290 ; end: 300
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: carpentry - start: 70 ; end: 85
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: carpentry - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: painting - start: 165 ; end: 175
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: painting - start: 180 ; end: 190
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: painting - start: 235 ; end: 245
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: painting - start: 210 ; end: 220
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: painting - start: 195 ; end: 205
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: windows - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: windows - start: 265 ; end: 270
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: windows - start: 250 ; end: 255
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: garden - start: 260 ; end: 265
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: garden - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: garden - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: garden - start: 255 ; end: 260
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: garden - start: 245 ; end: 250
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: moving - start: 295 ; end: 300
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: moving - start: 290 ; end: 295
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: moving - start: 300 ; end: 305
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: moving - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: moving - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO]  *           334      218  0.19s        1      (gap is 9.58%)
+[2019-05-29T22:00:59Z, INFO] Initialization of constructionPlan.
+[2019-05-29T22:00:59Z, INFO] Initialization of THousePlan.
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: carpentry - start: 120 ; end: 135
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: plumbing - start: 70 ; end: 110
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: ceiling - start: 195 ; end: 210
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: roofing - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: painting - start: 210 ; end: 220
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: windows - start: 260 ; end: 265
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: facade - start: 250 ; end: 260
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: garden - start: 240 ; end: 245
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: moving - start: 265 ; end: 270
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: masonry - start: 70 ; end: 105
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: carpentry - start: 105 ; end: 120
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: plumbing - start: 230 ; end: 270
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: ceiling - start: 210 ; end: 225
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: roofing - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: painting - start: 225 ; end: 235
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: windows - start: 250 ; end: 255
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: facade - start: 270 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: garden - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: moving - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: carpentry - start: 135 ; end: 150
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: plumbing - start: 190 ; end: 230
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: ceiling - start: 180 ; end: 195
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: roofing - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: painting - start: 195 ; end: 205
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: windows - start: 245 ; end: 250
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: facade - start: 240 ; end: 250
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: garden - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: moving - start: 255 ; end: 260
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: carpentry - start: 70 ; end: 85
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: plumbing - start: 110 ; end: 150
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: ceiling - start: 165 ; end: 180
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: roofing - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: painting - start: 180 ; end: 190
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: windows - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: facade - start: 280 ; end: 290
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: garden - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: moving - start: 290 ; end: 295
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: carpentry - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: plumbing - start: 150 ; end: 190
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: ceiling - start: 150 ; end: 165
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: roofing - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: painting - start: 165 ; end: 175
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: windows - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: facade - start: 290 ; end: 300
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: garden - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: moving - start: 300 ; end: 305
+[2019-05-29T22:00:59Z, INFO] Initialization of workerPlan.
+[2019-05-29T22:00:59Z, INFO] Initialization of TWorkerPlan.
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: masonry - start: 70 ; end: 105
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: carpentry - start: 120 ; end: 135
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: carpentry - start: 105 ; end: 120
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: carpentry - start: 135 ; end: 150
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: ceiling - start: 195 ; end: 210
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: ceiling - start: 210 ; end: 225
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: ceiling - start: 180 ; end: 195
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: ceiling - start: 165 ; end: 180
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: ceiling - start: 150 ; end: 165
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: roofing - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: roofing - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: roofing - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: windows - start: 260 ; end: 265
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: windows - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: windows - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: facade - start: 250 ; end: 260
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: facade - start: 270 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: facade - start: 240 ; end: 250
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 4, Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 1, Task: plumbing - start: 70 ; end: 110
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 2, Task: plumbing - start: 230 ; end: 270
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: plumbing - start: 190 ; end: 230
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 4, Task: plumbing - start: 110 ; end: 150
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: plumbing - start: 150 ; end: 190
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 4, Task: roofing - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: roofing - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 4, Task: facade - start: 280 ; end: 290
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: facade - start: 290 ; end: 300
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: carpentry - start: 70 ; end: 85
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: carpentry - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: painting - start: 210 ; end: 220
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: painting - start: 225 ; end: 235
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: painting - start: 195 ; end: 205
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: painting - start: 180 ; end: 190
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: painting - start: 165 ; end: 175
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: windows - start: 250 ; end: 255
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: windows - start: 245 ; end: 250
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: garden - start: 240 ; end: 245
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: garden - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: garden - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: garden - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: garden - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: moving - start: 265 ; end: 270
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: moving - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: moving - start: 255 ; end: 260
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: moving - start: 290 ; end: 295
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: moving - start: 300 ; end: 305
+[2019-05-29T22:00:59Z, INFO]  *           337      363  0.19s        1      (gap is 8.61%)
+[2019-05-29T22:00:59Z, INFO] Initialization of constructionPlan.
+[2019-05-29T22:00:59Z, INFO] Initialization of THousePlan.
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: carpentry - start: 135 ; end: 150
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: plumbing - start: 70 ; end: 110
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: ceiling - start: 150 ; end: 165
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: roofing - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: painting - start: 165 ; end: 175
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: windows - start: 245 ; end: 250
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: facade - start: 240 ; end: 250
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: garden - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: moving - start: 255 ; end: 260
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: carpentry - start: 105 ; end: 120
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: plumbing - start: 110 ; end: 150
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: ceiling - start: 210 ; end: 225
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: roofing - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: painting - start: 225 ; end: 235
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: windows - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: facade - start: 260 ; end: 270
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: garden - start: 250 ; end: 255
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: moving - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: carpentry - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: plumbing - start: 230 ; end: 270
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: ceiling - start: 195 ; end: 210
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: roofing - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: painting - start: 210 ; end: 220
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: windows - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: facade - start: 290 ; end: 300
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: garden - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: moving - start: 300 ; end: 305
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: masonry - start: 70 ; end: 105
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: carpentry - start: 120 ; end: 135
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: plumbing - start: 190 ; end: 230
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: ceiling - start: 180 ; end: 195
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: roofing - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: painting - start: 195 ; end: 205
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: windows - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: facade - start: 250 ; end: 260
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: garden - start: 240 ; end: 245
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: moving - start: 290 ; end: 295
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: carpentry - start: 70 ; end: 85
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: plumbing - start: 150 ; end: 190
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: ceiling - start: 165 ; end: 180
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: roofing - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: painting - start: 180 ; end: 190
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: windows - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: facade - start: 280 ; end: 290
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: garden - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: moving - start: 295 ; end: 300
+[2019-05-29T22:00:59Z, INFO] Initialization of workerPlan.
+[2019-05-29T22:00:59Z, INFO] Initialization of TWorkerPlan.
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: masonry - start: 70 ; end: 105
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: carpentry - start: 135 ; end: 150
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: carpentry - start: 105 ; end: 120
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: carpentry - start: 120 ; end: 135
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: ceiling - start: 150 ; end: 165
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: ceiling - start: 210 ; end: 225
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: ceiling - start: 195 ; end: 210
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: ceiling - start: 180 ; end: 195
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: ceiling - start: 165 ; end: 180
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: roofing - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: roofing - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: roofing - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: windows - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: windows - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: windows - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: windows - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: facade - start: 240 ; end: 250
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: facade - start: 260 ; end: 270
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: facade - start: 250 ; end: 260
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 1, Task: plumbing - start: 70 ; end: 110
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 2, Task: plumbing - start: 110 ; end: 150
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: plumbing - start: 230 ; end: 270
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 4, Task: plumbing - start: 190 ; end: 230
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: plumbing - start: 150 ; end: 190
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: roofing - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: roofing - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: facade - start: 290 ; end: 300
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: facade - start: 280 ; end: 290
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: carpentry - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: carpentry - start: 70 ; end: 85
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: painting - start: 165 ; end: 175
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: painting - start: 225 ; end: 235
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: painting - start: 210 ; end: 220
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: painting - start: 195 ; end: 205
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: painting - start: 180 ; end: 190
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: windows - start: 245 ; end: 250
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: garden - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: garden - start: 250 ; end: 255
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: garden - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: garden - start: 240 ; end: 245
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: garden - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: moving - start: 255 ; end: 260
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: moving - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: moving - start: 300 ; end: 305
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: moving - start: 290 ; end: 295
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: moving - start: 295 ; end: 300
+[2019-05-29T22:00:59Z, INFO]  *           357      794  0.19s        1      (gap is 2.52%)
+[2019-05-29T22:00:59Z, INFO] Initialization of constructionPlan.
+[2019-05-29T22:00:59Z, INFO] Initialization of THousePlan.
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: masonry - start: 70 ; end: 105
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: carpentry - start: 170 ; end: 185
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: plumbing - start: 255 ; end: 295
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: ceiling - start: 105 ; end: 120
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: roofing - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: painting - start: 120 ; end: 130
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: windows - start: 265 ; end: 270
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: facade - start: 295 ; end: 305
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: garden - start: 295 ; end: 300
+[2019-05-29T22:00:59Z, INFO] House: 1 --> Task: moving - start: 305 ; end: 310
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: masonry - start: 105 ; end: 140
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: carpentry - start: 185 ; end: 200
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: plumbing - start: 175 ; end: 215
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: ceiling - start: 155 ; end: 170
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: roofing - start: 215 ; end: 220
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: painting - start: 170 ; end: 180
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: windows - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: facade - start: 245 ; end: 255
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: garden - start: 220 ; end: 225
+[2019-05-29T22:00:59Z, INFO] House: 2 --> Task: moving - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: carpentry - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: plumbing - start: 215 ; end: 255
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: ceiling - start: 50 ; end: 65
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: roofing - start: 295 ; end: 300
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: painting - start: 65 ; end: 75
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: windows - start: 305 ; end: 310
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: facade - start: 300 ; end: 310
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: garden - start: 300 ; end: 305
+[2019-05-29T22:00:59Z, INFO] House: 3 --> Task: moving - start: 313 ; end: 318
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: carpentry - start: 140 ; end: 155
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: plumbing - start: 65 ; end: 105
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: ceiling - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: roofing - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: painting - start: 50 ; end: 60
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: windows - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: facade - start: 235 ; end: 245
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: garden - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] House: 4 --> Task: moving - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: carpentry - start: 200 ; end: 215
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: plumbing - start: 135 ; end: 175
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: ceiling - start: 120 ; end: 135
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: roofing - start: 220 ; end: 225
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: painting - start: 135 ; end: 145
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: windows - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: facade - start: 255 ; end: 265
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: garden - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] House: 5 --> Task: moving - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO] Initialization of workerPlan.
+[2019-05-29T22:00:59Z, INFO] Initialization of TWorkerPlan.
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: masonry - start: 70 ; end: 105
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: masonry - start: 105 ; end: 140
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: masonry - start: 35 ; end: 70
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: carpentry - start: 170 ; end: 185
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: carpentry - start: 185 ; end: 200
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: carpentry - start: 140 ; end: 155
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: carpentry - start: 200 ; end: 215
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: ceiling - start: 155 ; end: 170
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: roofing - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: roofing - start: 215 ; end: 220
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: roofing - start: 230 ; end: 235
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: roofing - start: 220 ; end: 225
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: windows - start: 265 ; end: 270
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: windows - start: 270 ; end: 275
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 3, Task: windows - start: 305 ; end: 310
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: windows - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: windows - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 1, Task: facade - start: 295 ; end: 305
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 2, Task: facade - start: 245 ; end: 255
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 4, Task: facade - start: 235 ; end: 245
+[2019-05-29T22:00:59Z, INFO] Worker: Joe --> House: 5, Task: facade - start: 255 ; end: 265
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: masonry - start: 0 ; end: 35
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 1, Task: plumbing - start: 255 ; end: 295
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 2, Task: plumbing - start: 175 ; end: 215
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: plumbing - start: 215 ; end: 255
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 4, Task: plumbing - start: 65 ; end: 105
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: plumbing - start: 135 ; end: 175
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 1, Task: ceiling - start: 105 ; end: 120
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: ceiling - start: 50 ; end: 65
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 4, Task: ceiling - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 5, Task: ceiling - start: 120 ; end: 135
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: roofing - start: 295 ; end: 300
+[2019-05-29T22:00:59Z, INFO] Worker: Jack --> House: 3, Task: facade - start: 300 ; end: 310
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: carpentry - start: 35 ; end: 50
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: painting - start: 120 ; end: 130
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: painting - start: 170 ; end: 180
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: painting - start: 65 ; end: 75
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: painting - start: 50 ; end: 60
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: painting - start: 135 ; end: 145
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: garden - start: 295 ; end: 300
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: garden - start: 220 ; end: 225
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: garden - start: 300 ; end: 305
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: garden - start: 235 ; end: 240
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: garden - start: 225 ; end: 230
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 1, Task: moving - start: 305 ; end: 310
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 2, Task: moving - start: 275 ; end: 280
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 3, Task: moving - start: 313 ; end: 318
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 4, Task: moving - start: 280 ; end: 285
+[2019-05-29T22:00:59Z, INFO] Worker: Jim --> House: 5, Task: moving - start: 285 ; end: 290
+[2019-05-29T22:00:59Z, INFO]              357     1000          2    1   F   on _itv42
+[2019-05-29T22:00:59Z, INFO]              357     1000          2    2       on _itv23
+[2019-05-29T22:00:59Z, INFO]              357     1000          2    3       on _itv29
+[2019-05-29T22:00:59Z, INFO]              357     1000          2    4       on _itv82
+[2019-05-29T22:00:59Z, INFO]              357     1000          2    5   F   on _itv90
+[2019-05-29T22:00:59Z, INFO]              357     1000          2    6       on _itv10
+[2019-05-29T22:00:59Z, INFO]              357     1000          2    7       on _itv98
+[2019-05-29T22:00:59Z, INFO]              357     1000          2    8       on _itv78
+[2019-05-29T22:00:59Z, INFO]              357     1000          2    9       on _itv29
+[2019-05-29T22:00:59Z, INFO]              357     1000          2   10   F   on _itv56
+[2019-05-29T22:00:59Z, INFO]              357     2000         46    1   F   on _itv62
+[2019-05-29T22:00:59Z, INFO]              357     3000         64    1   F   on _itv52
+[2019-05-29T22:00:59Z, INFO]              357     2000         54    2   F   on _itv62
+[2019-05-29T22:00:59Z, INFO]              357     3000         64    2       on _itv54
+[2019-05-29T22:00:59Z, INFO]  ! Time = 0.27s, Average fail depth = 27, Memory usage = 12.7 MB
+[2019-05-29T22:00:59Z, INFO]  ! Current bound is 366 (gap is 2.52%)
+[2019-05-29T22:00:59Z, INFO]  !          Best Branches  Non-fixed    W       Branch decision
+[2019-05-29T22:00:59Z, INFO]              357     2000         52    3   F   on _itv42
+[2019-05-29T22:00:59Z, INFO]              357     3000         64    3   F   on _itv57
+[2019-05-29T22:00:59Z, INFO]  ! ----------------------------------------------------------------------------
+[2019-05-29T22:00:59Z, INFO]  ! Search terminated by limit, 4 solutions found.
+[2019-05-29T22:00:59Z, INFO]  ! Best objective         : 357 (gap is 2.52%)
+[2019-05-29T22:00:59Z, INFO]  ! Best bound             : 366
+[2019-05-29T22:00:59Z, INFO]  ! Number of branches     : 24090
+[2019-05-29T22:00:59Z, INFO]  ! Number of fails        : 10043
+[2019-05-29T22:00:59Z, INFO]  ! Total memory usage     : 13.3 MB (12.7 MB CP Optimizer + 0.6 MB Concert)
+[2019-05-29T22:00:59Z, INFO]  ! Time spent in solve    : 0.27s (0.26s engine + 0.00s extraction)
+[2019-05-29T22:00:59Z, INFO]  ! Search speed (br. / s) : 92653.8
+[2019-05-29T22:00:59Z, INFO]  ! ----------------------------------------------------------------------------
+[2019-05-29T22:00:59Z, INFO] Total time spent in post processing: 65 msecs.
+[2019-05-29T22:00:59Z, INFO] Solve finished with status: FEASIBLE_SOLUTION.

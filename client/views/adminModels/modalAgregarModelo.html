@@ -1,0 +1,51 @@
+<template name="modalAgregarModelo">
+
+
+    <div class="modal fade" id="modal_agregar_modelo" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content" style="min-width: 300px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times; </span></button>
+                <h4 class="modal-title" >Cargar Modelo</h4>
+            </div>
+           
+              <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                   <div class="btn-group">
+                    {{#with currentUpload}}
+                      Subiendo <b>{{file.name}}</b>: 
+                      <span id="progress">{{progress.get}}%</span>
+                    {{else}}
+                      
+                      <div class="fileinput fileinput-new input-group" data-provides="fileinput" id="fileInput1">
+                            <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                            <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Seleccionar Archivo </span><span class="fileinput-exists">Cambiar</span><input type="file" name="..."></span>
+                            <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remover</a>
+                      </div>
+
+                         <p><small>Seleccione un archivo tipo <code>mod</code> or <code>dat</code> cuyo tamaño sea menor o igual a 10MB</small></p>
+                      
+
+                    {{/with}}
+                   <label title="Subir Archivo" id="guardar" class="btn btn-primary">Cargar</label>
+                  </div>
+               
+                </div>
+               
+
+              </div>
+
+
+
+
+        
+
+           
+
+          </div>
+        </div>
+    </div> 
+    </template>
+
+
+   
