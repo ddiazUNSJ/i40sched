@@ -36,7 +36,7 @@ Template.watsonML.rendered = function () {
     // new Chart(ctx2, {type: 'bar', data: barData, options:barOptions});
 
 
-   const container = document.getElementById('jsoneditor')
+  const container = document.getElementById('jsoneditor')
 
   const options = {
     mode: 'view'
@@ -60,16 +60,44 @@ Template.watsonML.events({
     'click #verToken': function(){
         //var jsonId = Problema.findOne({"_id": this._id } , { fields: { SolJsonfileId: 1}}).SolJsonfileId;
         console.log( "ver token id ");
-        // Meteor.call('leerArchivoJson', this._id , function (error, result){ 
-        //     if (error){
-        //         console.log(error);
-        //     }
-        //     else{
-        //         Session.set("fileAMostrar",result);
-        //         console.log(result);
-        //         Modal.show('modalreg'); 
-        //     }
-        // });
+        Meteor.call( 'loginToken',function (error, result){ 
+            if (error){
+                 console.log(error);
+            }
+            else{
+                access_token=JSON.parse(result)["access_token"];
+                console.log(result);
+                console.log(access_token);
+                Session.set('Atoken', access_token);
+                  const container = document.getElementById('jsoneditor')
+                  const json = access_token;
+                  const options = {
+                    mode: 'view'
+                  }
+                  const editor = new JSONEditor(container, options, json)
+                }
+         });
     },
-
+    'click #verJob': function(){
+        //var jsonId = Problema.findOne({"_id": this._id } , { fields: { SolJsonfileId: 1}}).SolJsonfileId;
+        console.log( "ver job");
+        Meteor.call( 'getJob',Session.get('Atoken') ,function (error, result){ 
+            if (error){
+                 console.log(error);
+            }
+            else{
+                
+                console.log(result);
+                
+                  const container = document.getElementById('jsoneditor')
+                  const json = result;
+                  const options = {
+                    mode: 'view'
+                  }
+                  const editor = new JSONEditor(container, options, json)
+                }
+         });
+    }
 });
+
+ 

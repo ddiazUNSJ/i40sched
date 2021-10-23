@@ -1,39 +1,78 @@
-import { Meteor } from 'meteor/meteor'
-import { fetch, Headers, Request, Response } from 'meteor/fetch'
+import { Meteor } from 'meteor/meteor';
+import { fetch, Headers, Request, Response } from 'meteor/fetch';
+//import { URLSearchParams, URL } from 'meteor/url';
+import  { URL , URLSearchParams}  from 'url';
+//const { URL } = require('url');
+
+// var myUrl = new URL('https://www.meteor.com');
+
+// const myUrlString = myUrl.toString();
 
 Meteor.methods({
-  'login.token'({ username, password }) {
 
+  loginToken:function() {
+
+     
      // Verifica identidad agregado 20/10/2021 DD
      if (!this.userId) {
       throw new Meteor.Error('Acceso invalido',
         'Usted no esta logeado');
       }
 
-     var myHeaders = new Headers();
-         myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-         myHeaders.append("Accept", "application/json");
+     
+     // var myUrl = new URL('https://www.meteor.com');
+     // const myUrlString = myUrl.toString();
+     // console.log("ESTOY AQUI 2...",myUrlString );
 
-     var urlencoded = new URLSearchParams();
+      const myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+      myHeaders.append("Accept", "application/json");
+
+// let url = new URL('http://www.test.com/t.html?a=1&b=3&c=m2-m3-m4-m5');
+// let searchParams = new URLSearchParams(url.search);
+// console.log(searchParams.get('c'));  
+
+// outputs "m2-m3-m4-m5"
+        const urlencoded = new URLSearchParams("");
         urlencoded.append("grant_type", "urn:ibm:params:oauth:grant-type:apikey");
         urlencoded.append("apikey", "xZRGAKDtV1h8kUBmh_hgmjH-tgq0NpEFMvaulTPussmD");
 
-     var requestOptions = {   
+        const requestOptions = {   
           method: 'POST',
           headers: myHeaders,
           body: urlencoded,
           redirect: 'follow'
         };   
-     fetch("https://iam.cloud.ibm.com/identity/token", requestOptions)
+        
+
+     var salida1=fetch("https://iam.cloud.ibm.com/identity/token", requestOptions)
         .then(response => response.text())
-        .then(result => console.log(result))
+        .then(result => {  return result})
         .catch(error => console.log('error', error));  
-    
-  }
+
+     return salida1;
+  },
+
+  getJob:function(tokenStr) {
+        const myHeaders = new Headers();
+        var tokenID="Bearer "+tokenStr;
+        myHeaders.append("Authorization", tokenID);
+        myHeaders.append("Content-Type", "application/json");
+
+        const requestOptions = {
+          method: 'GET',
+          headers: myHeaders,
+          redirect: 'follow'
+        };
+
+        var salida = fetch("https://us-south.ml.cloud.ibm.com/ml/v4/deployment_jobs/b53e2b1d-bc9e-4edb-a4c0-ccb5943cbf5f?version=2020-08-01&space_id=9b594878-ec22-4b73-bd2d-431669079a74", requestOptions)
+          .then(response => response.text())
+          .then(result => { return result})
+          .catch(error => console.log('error', error));
+          
+       return salida;   
+   }
+
 })
-
-
-
-
 
 
