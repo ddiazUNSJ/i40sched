@@ -33,9 +33,10 @@ Meteor.methods({
 // console.log(searchParams.get('c'));  
 
 // outputs "m2-m3-m4-m5"
+
         const urlencoded = new URLSearchParams("");
         urlencoded.append("grant_type", "urn:ibm:params:oauth:grant-type:apikey");
-        urlencoded.append("apikey", "xZRGAKDtV1h8kUBmh_hgmjH-tgq0NpEFMvaulTPussmD");
+        urlencoded.append("apikey", Meteor.settings.private.apikey);
 
         const requestOptions = {   
           method: 'POST',
