@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import { fetch, Headers, Request, Response } from 'meteor/fetch';
 //import { URLSearchParams, URL } from 'meteor/url';
 import  { URL , URLSearchParams}  from 'url';
+import  { cosIBM}  from 'ibm-cos-sdk';
 //const { URL } = require('url');
 
 // var myUrl = new URL('https://www.meteor.com');
@@ -72,8 +73,29 @@ Meteor.methods({
           .catch(error => console.log('error', error));
           
        return salida;   
+   },
+
+   getSolution:function(tokenStr,bucketName,itemName){
+    var config = {
+        endpoint: Meteor.settings.private.COS_service.endpoint,
+        apiKeyId: Meteor.settings.private.apikey,
+        serviceInstanceId:Meteor.settings.private.COS_service.serviceInstanceId,
+        };
+
+    var cos = new ibm.S3(config);
+    return cos.getObject({
+        Bucket: bucketName, 
+        Key: itemName
+    }).promise()
+    .then((data) => {
+        if (data != null) {
+            console.log('File Contents: ' + Buffer.from(data.Body).toString());
+            return Buffer.from(data.Body).toString();
+         }    
+    })
+    .catch((e) => {
+        console.error(`ERROR: ${e.code} - ${e.message}\n`);
+    });
    }
-
 })
-
 

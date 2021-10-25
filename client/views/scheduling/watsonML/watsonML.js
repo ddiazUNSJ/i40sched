@@ -38,8 +38,15 @@ Template.watsonML.rendered = function () {
 
   const container = document.getElementById('jsoneditor')
 
+  // const options = {
+  //   mode: 'view'
+  // }
   const options = {
-    mode: 'view'
+    mode: 'tree',
+    modes: ['code', 'form', 'text', 'tree', 'view', 'preview'], // allowed modes
+    // onModeChange: function (newMode, oldMode) {
+    //   console.log('Mode switched from', oldMode, 'to', newMode)
+    // }
   }
 
   const json = {
@@ -50,8 +57,10 @@ Template.watsonML.rendered = function () {
     'object': {'a': 'b', 'c': 'd'},
     'string': 'Hello World'
   }
+ // if (!editor) editor = new JSONEditor(container, options, json)
+ //                  else editor.json=json;
 
-  const editor = new JSONEditor(container, options, json)
+ editor = new JSONEditor(container, options, json)
 
 
 };
@@ -74,7 +83,11 @@ Template.watsonML.events({
                   const options = {
                     mode: 'view'
                   }
-                  const editor = new JSONEditor(container, options, json)
+
+                   if (!editor) 
+                    editor = new JSONEditor(container, options, json)
+                   else
+                     editor.set(json)
                 }
          });
     },
@@ -90,11 +103,15 @@ Template.watsonML.events({
                 console.log(result);
                 
                   const container = document.getElementById('jsoneditor')
-                  const json = result;
+                  const json =JSON.parse(result);
                   const options = {
                     mode: 'view'
                   }
-                  const editor = new JSONEditor(container, options, json)
+                  //const editor = new JSONEditor(container, options, json)
+                   if (!editor) 
+                      editor = new JSONEditor(container, options, json)
+                    else 
+                       editor.set(json);
                 }
          });
     }
