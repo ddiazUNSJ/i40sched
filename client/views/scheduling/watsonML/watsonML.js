@@ -1,4 +1,5 @@
 import JSONEditor from 'jsoneditor';
+
 Template.watsonML.rendered = function () {
 
     // Add slimscroll to element
@@ -114,7 +115,50 @@ Template.watsonML.events({
                        editor.set(json);
                 }
          });
+    },
+
+    
+    'click #verbucketobj': function(){
+        //var jsonId = Problema.findOne({"_id": this._id } , { fields: { SolJsonfileId: 1}}).SolJsonfileId;
+        console.log( "ver verbucketobj");
+        Meteor.call( 'getBucketObject',Session.get('Atoken') ,"warehouse-bucket", "solution.json",function (error, result){ 
+            if (error){
+                 console.log(error);
+            }
+            else{
+                
+                console.log("result en browser: ", result);
+                
+                  const container = document.getElementById('jsoneditor')
+                  const json =JSON.parse(result);
+                  const options = {
+                    mode: 'view'
+                  }
+                  //const editor = new JSONEditor(container, options, json)
+                   if (!editor) 
+                      editor = new JSONEditor(container, options, json)
+                    else 
+                       editor.set(json);
+                }
+         });
+    },
+
+    'click #crearbucket': function(){
+        //var jsonId = Problema.findOne({"_id": this._id } , { fields: { SolJsonfileId: 1}}).SolJsonfileId;
+        console.log( "en crearbucket");
+        Meteor.call( 'createBucket',Session.get('Atoken') ,"oct25-bucket",function (error, result){ 
+            if (error){
+                 console.log(error);
+            }
+            else{
+                
+                console.log("bucket creado ");
+                
+                  
+                }
+         });
     }
+
 });
 
  

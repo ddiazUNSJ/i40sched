@@ -2,7 +2,16 @@ import { Meteor } from 'meteor/meteor';
 import { fetch, Headers, Request, Response } from 'meteor/fetch';
 //import { URLSearchParams, URL } from 'meteor/url';
 import  { URL , URLSearchParams}  from 'url';
-import  { cosIBM}  from 'ibm-cos-sdk';
+//import  { ibm }  from 'ibm-cos-sdk';
+var ibm = require('ibm-cos-sdk');
+// var config = {
+//         endpoint: Meteor.settings.private.COS_service.endpoint,
+//         apiKeyId: Meteor.settings.private.apikey,
+//         serviceInstanceId:Meteor.settings.private.COS_service.serviceInstanceId,
+//         };
+
+// var cos1 = new ibm.S3(config);
+//const IBM = require('ibm-cos-sdk');
 //const { URL } = require('url');
 
 // var myUrl = new URL('https://www.meteor.com');
@@ -75,27 +84,54 @@ Meteor.methods({
        return salida;   
    },
 
-   getSolution:function(tokenStr,bucketName,itemName){
+   getBucketObject:function(tokenStr,bucketName,itemName){
     var config = {
         endpoint: Meteor.settings.private.COS_service.endpoint,
         apiKeyId: Meteor.settings.private.apikey,
         serviceInstanceId:Meteor.settings.private.COS_service.serviceInstanceId,
         };
 
-    var cos = new ibm.S3(config);
+    const cos = new ibm.S3(config);
+    console.log ('crendo cos object');
     return cos.getObject({
         Bucket: bucketName, 
         Key: itemName
     }).promise()
     .then((data) => {
         if (data != null) {
-            console.log('File Contents: ' + Buffer.from(data.Body).toString());
-            return Buffer.from(data.Body).toString();
+            const salida=Buffer.from(data.Body).toString();
+            console.log("salida: ", salida);
+            console.log('File Contents: ' + salida);
+            return salida;
          }    
     })
     .catch((e) => {
         console.error(`ERROR: ${e.code} - ${e.message}\n`);
     });
+   },
+
+   createBucket:function(tokenStr,bucketName){
+    var config = {
+        endpoint: Meteor.settings.private.COS_service.endpoint,
+        apiKeyId: Meteor.settings.private.apikey,
+        serviceInstanceId:Meteor.settings.private.COS_service.serviceInstanceId,
+        };
+
+    const cos = new ibm.S3(config);
+    console.log ('crendo bucket');
+    return cos.createBucket({
+        Bucket: bucketName,
+        CreateBucketConfiguration: {
+          LocationConstraint: 'us-south'
+        },
+    }).promise()
+    .then(() => {
+                  return "bucket creado";
+         })
+    .catch((e) => {
+        console.error(`ERROR: ${e.code} - ${e.message}\n`);
+    });
    }
 })
+
 
